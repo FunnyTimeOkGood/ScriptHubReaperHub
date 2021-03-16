@@ -1,0 +1,720 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+if getgenv().GUI_RUNNING then return end
+getgenv().GUI_RUNNING = true
+local ScreenGui = Instance.new("ScreenGui")
+local ScriptHub = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Credits = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Title = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local SupportedGames = Instance.new("ScrollingFrame")
+local LumberTycoonSupport = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local ArsenalSupport = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local TowerOfHellSupport = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local DaHoodSupport = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local PhantomForcesSupport = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local BuildABoatSupport = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local CounterBloxSupport = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local JailBreakSupport = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local AdoptMeSupport = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local SkyWarsSupport = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local BloxBurgSupport = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local MoreComingSoon = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local Bar1 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local Bar2 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local SupportedGamestext = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local DetectGame = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Information = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+local DiscordInvite = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local LoginGUI = Instance.new("ImageLabel")
+local Login = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local Username = Instance.new("TextBox")
+local UICorner_23 = Instance.new("UICorner")
+local Password = Instance.new("TextBox")
+local UICorner_24 = Instance.new("UICorner")
+local PasswordCensor = Instance.new("TextLabel")
+local UICorner_25 = Instance.new("UICorner")
+local Bar = Instance.new("TextLabel")
+local UICorner_26 = Instance.new("UICorner")
+local Discord = Instance.new("TextBox")
+local UICorner_27 = Instance.new("UICorner")
+local Note = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local DiscordInvite_2 = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = ScreenGui
+ScriptHub.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+ScriptHub.Position = UDim2.new(0.647613049, 0, 0.618593574, 0)
+ScriptHub.Size = UDim2.new(0, 561, 0, 320)
+ScriptHub.Visible = false
+
+UICorner.Parent = ScriptHub
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = ScriptHub
+
+Credits.Name = "Credits"
+Credits.Parent = ScriptHub
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 0.800
+Credits.Size = UDim2.new(0, 561, 0, 42)
+Credits.Font = Enum.Font.SourceSansBold
+Credits.Text = "Auto game detector made by ReaperHacks#0001"
+Credits.TextColor3 = Color3.fromRGB(0, 0, 0)
+Credits.TextSize = 25.000
+Credits.TextWrapped = true
+
+UICorner_2.Parent = Credits
+
+Title.Name = "Title"
+Title.Parent = ScriptHub
+Title.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Title.Size = UDim2.new(0, 560, 0, 42)
+Title.Font = Enum.Font.Roboto
+Title.Text = "Reaper Hub "
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 25.000
+
+UICorner_3.Parent = Title
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(147, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Title
+
+SupportedGames.Name = "Supported Games"
+SupportedGames.Parent = ScriptHub
+SupportedGames.Active = true
+SupportedGames.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+SupportedGames.BackgroundTransparency = 1.000
+SupportedGames.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SupportedGames.Position = UDim2.new(0, 0, 0.240624994, 0)
+SupportedGames.Size = UDim2.new(0, 429, 0, 243)
+SupportedGames.ScrollBarThickness = 10
+SupportedGames.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+LumberTycoonSupport.Name = "LumberTycoonSupport"
+LumberTycoonSupport.Parent = SupportedGames
+LumberTycoonSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LumberTycoonSupport.BackgroundTransparency = 0.800
+LumberTycoonSupport.Position = UDim2.new(0.050999999, 0, 0.0179999992, 0)
+LumberTycoonSupport.Size = UDim2.new(0, 383, 0, 16)
+LumberTycoonSupport.Font = Enum.Font.SourceSansBold
+LumberTycoonSupport.Text = "Lumber Tycoon 2"
+LumberTycoonSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+LumberTycoonSupport.TextScaled = true
+LumberTycoonSupport.TextSize = 14.000
+LumberTycoonSupport.TextWrapped = true
+
+UICorner_4.Parent = LumberTycoonSupport
+
+ArsenalSupport.Name = "ArsenalSupport"
+ArsenalSupport.Parent = SupportedGames
+ArsenalSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ArsenalSupport.BackgroundTransparency = 0.800
+ArsenalSupport.Position = UDim2.new(0.050999999, 0, 0.061999999, 0)
+ArsenalSupport.Size = UDim2.new(0, 384, 0, 16)
+ArsenalSupport.Font = Enum.Font.SourceSansBold
+ArsenalSupport.Text = "Arsenal"
+ArsenalSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArsenalSupport.TextScaled = true
+ArsenalSupport.TextSize = 14.000
+ArsenalSupport.TextWrapped = true
+
+UICorner_5.Parent = ArsenalSupport
+
+TowerOfHellSupport.Name = "TowerOfHellSupport"
+TowerOfHellSupport.Parent = SupportedGames
+TowerOfHellSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TowerOfHellSupport.BackgroundTransparency = 0.800
+TowerOfHellSupport.Position = UDim2.new(0.050999999, 0, 0.108000003, 0)
+TowerOfHellSupport.Size = UDim2.new(0, 384, 0, 16)
+TowerOfHellSupport.Font = Enum.Font.SourceSansBold
+TowerOfHellSupport.Text = "Tower Of Hell"
+TowerOfHellSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+TowerOfHellSupport.TextScaled = true
+TowerOfHellSupport.TextSize = 14.000
+TowerOfHellSupport.TextWrapped = true
+
+UICorner_6.Parent = TowerOfHellSupport
+
+DaHoodSupport.Name = "DaHoodSupport"
+DaHoodSupport.Parent = SupportedGames
+DaHoodSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaHoodSupport.BackgroundTransparency = 0.800
+DaHoodSupport.Position = UDim2.new(0.0540000014, 0, 0.151999995, 0)
+DaHoodSupport.Size = UDim2.new(0, 383, 0, 16)
+DaHoodSupport.Font = Enum.Font.SourceSansBold
+DaHoodSupport.Text = "Da Hood"
+DaHoodSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+DaHoodSupport.TextScaled = true
+DaHoodSupport.TextSize = 14.000
+DaHoodSupport.TextWrapped = true
+
+UICorner_7.Parent = DaHoodSupport
+
+PhantomForcesSupport.Name = "PhantomForcesSupport"
+PhantomForcesSupport.Parent = SupportedGames
+PhantomForcesSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PhantomForcesSupport.BackgroundTransparency = 0.800
+PhantomForcesSupport.Position = UDim2.new(0.0489999987, 0, 0.195999995, 0)
+PhantomForcesSupport.Size = UDim2.new(0, 386, 0, 16)
+PhantomForcesSupport.Font = Enum.Font.SourceSansBold
+PhantomForcesSupport.Text = "Phantom Forces"
+PhantomForcesSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+PhantomForcesSupport.TextScaled = true
+PhantomForcesSupport.TextSize = 14.000
+PhantomForcesSupport.TextWrapped = true
+
+UICorner_8.Parent = PhantomForcesSupport
+
+BuildABoatSupport.Name = "BuildABoatSupport"
+BuildABoatSupport.Parent = SupportedGames
+BuildABoatSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BuildABoatSupport.BackgroundTransparency = 0.800
+BuildABoatSupport.Position = UDim2.new(0.0540000014, 0, 0.239999995, 0)
+BuildABoatSupport.Size = UDim2.new(0, 384, 0, 16)
+BuildABoatSupport.Font = Enum.Font.SourceSansBold
+BuildABoatSupport.Text = "Build A Boat"
+BuildABoatSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+BuildABoatSupport.TextScaled = true
+BuildABoatSupport.TextSize = 14.000
+BuildABoatSupport.TextWrapped = true
+
+UICorner_9.Parent = BuildABoatSupport
+
+CounterBloxSupport.Name = "CounterBloxSupport"
+CounterBloxSupport.Parent = SupportedGames
+CounterBloxSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CounterBloxSupport.BackgroundTransparency = 0.800
+CounterBloxSupport.Position = UDim2.new(0.0540000014, 0, 0.284000009, 0)
+CounterBloxSupport.Size = UDim2.new(0, 384, 0, 16)
+CounterBloxSupport.Font = Enum.Font.SourceSansBold
+CounterBloxSupport.Text = "Counter Blox"
+CounterBloxSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+CounterBloxSupport.TextScaled = true
+CounterBloxSupport.TextSize = 14.000
+CounterBloxSupport.TextWrapped = true
+
+UICorner_10.Parent = CounterBloxSupport
+
+JailBreakSupport.Name = "JailBreakSupport"
+JailBreakSupport.Parent = SupportedGames
+JailBreakSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JailBreakSupport.BackgroundTransparency = 0.800
+JailBreakSupport.Position = UDim2.new(0.0540000014, 0, 0.328000009, 0)
+JailBreakSupport.Size = UDim2.new(0, 384, 0, 16)
+JailBreakSupport.Font = Enum.Font.SourceSansBold
+JailBreakSupport.Text = "Jail Break"
+JailBreakSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+JailBreakSupport.TextScaled = true
+JailBreakSupport.TextSize = 14.000
+JailBreakSupport.TextWrapped = true
+
+UICorner_11.Parent = JailBreakSupport
+
+AdoptMeSupport.Name = "AdoptMeSupport"
+AdoptMeSupport.Parent = SupportedGames
+AdoptMeSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdoptMeSupport.BackgroundTransparency = 0.800
+AdoptMeSupport.Position = UDim2.new(0.0540000014, 0, 0.372000009, 0)
+AdoptMeSupport.Size = UDim2.new(0, 384, 0, 16)
+AdoptMeSupport.Font = Enum.Font.SourceSansBold
+AdoptMeSupport.Text = "Adopt Me"
+AdoptMeSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdoptMeSupport.TextScaled = true
+AdoptMeSupport.TextSize = 14.000
+AdoptMeSupport.TextWrapped = true
+
+UICorner_12.Parent = AdoptMeSupport
+
+SkyWarsSupport.Name = "SkyWarsSupport"
+SkyWarsSupport.Parent = SupportedGames
+SkyWarsSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SkyWarsSupport.BackgroundTransparency = 0.800
+SkyWarsSupport.Position = UDim2.new(0.0540000014, 0, 0.416000009, 0)
+SkyWarsSupport.Size = UDim2.new(0, 384, 0, 16)
+SkyWarsSupport.Font = Enum.Font.SourceSansBold
+SkyWarsSupport.Text = "Sky Wars"
+SkyWarsSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkyWarsSupport.TextScaled = true
+SkyWarsSupport.TextSize = 14.000
+SkyWarsSupport.TextWrapped = true
+
+UICorner_13.Parent = SkyWarsSupport
+
+BloxBurgSupport.Name = "BloxBurgSupport"
+BloxBurgSupport.Parent = SupportedGames
+BloxBurgSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BloxBurgSupport.BackgroundTransparency = 0.800
+BloxBurgSupport.Position = UDim2.new(0.0540000014, 0, 0.460000008, 0)
+BloxBurgSupport.Size = UDim2.new(0, 384, 0, 16)
+BloxBurgSupport.Font = Enum.Font.SourceSansBold
+BloxBurgSupport.Text = "Blox Burg"
+BloxBurgSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+BloxBurgSupport.TextScaled = true
+BloxBurgSupport.TextSize = 14.000
+BloxBurgSupport.TextWrapped = true
+
+UICorner_14.Parent = BloxBurgSupport
+
+MoreComingSoon.Name = "MoreComingSoon"
+MoreComingSoon.Parent = SupportedGames
+MoreComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MoreComingSoon.BackgroundTransparency = 0.800
+MoreComingSoon.Position = UDim2.new(0.0540000014, 0, 0.504000008, 0)
+MoreComingSoon.Size = UDim2.new(0, 381, 0, 16)
+MoreComingSoon.Font = Enum.Font.SourceSansBold
+MoreComingSoon.Text = "More Coming Soon..."
+MoreComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+MoreComingSoon.TextScaled = true
+MoreComingSoon.TextSize = 14.000
+MoreComingSoon.TextWrapped = true
+
+UICorner_15.Parent = MoreComingSoon
+
+Bar1.Name = "Bar1"
+Bar1.Parent = ScriptHub
+Bar1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Bar1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bar1.Position = UDim2.new(0, 0, 0.231250003, 0)
+Bar1.Size = UDim2.new(0, 433, 0, 6)
+
+UICorner_16.Parent = Bar1
+
+Bar2.Name = "Bar2"
+Bar2.Parent = ScriptHub
+Bar2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Bar2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bar2.Position = UDim2.new(0.761140823, 0, 0.231250003, 0)
+Bar2.Size = UDim2.new(0, 6, 0, 246)
+
+UICorner_17.Parent = Bar2
+
+SupportedGamestext.Name = "SupportedGamestext"
+SupportedGamestext.Parent = ScriptHub
+SupportedGamestext.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+SupportedGamestext.BackgroundTransparency = 0.800
+SupportedGamestext.Position = UDim2.new(0.0944741517, 0, 0.153124988, 0)
+SupportedGamestext.Size = UDim2.new(0, 327, 0, 16)
+SupportedGamestext.Font = Enum.Font.TitilliumWeb
+SupportedGamestext.Text = "Supported Games are listed below!"
+SupportedGamestext.TextColor3 = Color3.fromRGB(0, 0, 0)
+SupportedGamestext.TextSize = 20.000
+SupportedGamestext.TextWrapped = true
+
+UICorner_18.Parent = SupportedGamestext
+
+DetectGame.Name = "DetectGame"
+DetectGame.Parent = ScriptHub
+DetectGame.BackgroundColor3 = Color3.fromRGB(208, 208, 208)
+DetectGame.BackgroundTransparency = 0.800
+DetectGame.Position = UDim2.new(0.791443825, 0, 0.25, 0)
+DetectGame.Size = UDim2.new(0, 104, 0, 36)
+DetectGame.Font = Enum.Font.SourceSansSemibold
+DetectGame.Text = "Detect Game"
+DetectGame.TextColor3 = Color3.fromRGB(0, 0, 0)
+DetectGame.TextSize = 20.000
+DetectGame.TextWrapped = true
+
+UICorner_19.Parent = DetectGame
+
+Information.Name = "Information"
+Information.Parent = ScriptHub
+Information.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Information.BackgroundTransparency = 0.800
+Information.Position = UDim2.new(0.791443825, 0, 0.400000006, 0)
+Information.Size = UDim2.new(0, 104, 0, 146)
+Information.Font = Enum.Font.SourceSansBold
+Information.Text = "Hi this is a auto detect game script made by ReaperHacks#0001 just simply click the button shown above and boom it will auto execute the best script for the game your in! Press [P] to toggle!"
+Information.TextColor3 = Color3.fromRGB(0, 0, 0)
+Information.TextScaled = true
+Information.TextSize = 14.000
+Information.TextWrapped = true
+
+UICorner_20.Parent = Information
+
+DiscordInvite.Name = "DiscordInvite"
+DiscordInvite.Parent = ScriptHub
+DiscordInvite.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordInvite.BackgroundTransparency = 0.800
+DiscordInvite.Position = UDim2.new(0.791443825, 0, 0.896625161, 0)
+DiscordInvite.Size = UDim2.new(0, 104, 0, 21)
+DiscordInvite.Font = Enum.Font.SourceSansBold
+DiscordInvite.Text = "Click to copy Discord!"
+DiscordInvite.TextColor3 = Color3.fromRGB(0, 0, 0)
+DiscordInvite.TextScaled = true
+DiscordInvite.TextSize = 14.000
+DiscordInvite.TextWrapped = true
+
+UICorner_21.Parent = DiscordInvite
+
+LoginGUI.Name = "LoginGUI"
+LoginGUI.Parent = ScreenGui
+LoginGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoginGUI.BackgroundTransparency = 1.000
+LoginGUI.Position = UDim2.new(0.307999998, 0, 0, -330)
+LoginGUI.Size = UDim2.new(0, 602, 0, 330)
+LoginGUI.Image = "rbxassetid://3570695787"
+LoginGUI.ImageColor3 = Color3.fromRGB(65, 65, 65)
+LoginGUI.ScaleType = Enum.ScaleType.Slice
+LoginGUI.SliceCenter = Rect.new(100, 100, 100, 100)
+LoginGUI.SliceScale = 0.120
+
+Login.Name = "Login"
+Login.Parent = LoginGUI
+Login.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Login.Position = UDim2.new(0.338870436, 0, 0.815151513, 0)
+Login.Size = UDim2.new(0, 201, 0, 43)
+Login.Font = Enum.Font.TitilliumWeb
+Login.Text = "Login"
+Login.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login.TextScaled = true
+Login.TextSize = 14.000
+Login.TextWrapped = true
+
+UICorner_22.Parent = Login
+
+Username.Name = "Username"
+Username.Parent = LoginGUI
+Username.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Username.Position = UDim2.new(0.225913614, 0, 0.187878788, 0)
+Username.Size = UDim2.new(0, 330, 0, 50)
+Username.Font = Enum.Font.Roboto
+Username.PlaceholderText = "(Username)"
+Username.Text = ""
+Username.TextColor3 = Color3.fromRGB(0, 0, 0)
+Username.TextScaled = true
+Username.TextSize = 14.000
+Username.TextWrapped = true
+
+UICorner_23.Parent = Username
+
+Password.Name = "Password"
+Password.Parent = LoginGUI
+Password.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Password.Position = UDim2.new(0.224252477, 0, 0.403030276, 0)
+Password.Size = UDim2.new(0, 330, 0, 50)
+Password.Font = Enum.Font.SourceSans
+Password.Text = ""
+Password.TextColor3 = Color3.fromRGB(0, 0, 0)
+Password.TextScaled = true
+Password.TextSize = 14.000
+Password.TextWrapped = true
+
+UICorner_24.Parent = Password
+
+PasswordCensor.Name = "PasswordCensor"
+PasswordCensor.Parent = LoginGUI
+PasswordCensor.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+PasswordCensor.Position = UDim2.new(0.235880405, 0, 0.421212107, 0)
+PasswordCensor.Size = UDim2.new(0, 317, 0, 37)
+PasswordCensor.Font = Enum.Font.TitilliumWeb
+PasswordCensor.Text = "!Password Censor!"
+PasswordCensor.TextColor3 = Color3.fromRGB(0, 0, 0)
+PasswordCensor.TextScaled = true
+PasswordCensor.TextSize = 14.000
+PasswordCensor.TextWrapped = true
+
+UICorner_25.Parent = PasswordCensor
+
+Bar.Name = "Bar"
+Bar.Parent = LoginGUI
+Bar.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Bar.Position = UDim2.new(-0.00166112953, 0, 0, 0)
+Bar.Size = UDim2.new(0, 602, 0, 39)
+Bar.Font = Enum.Font.TitilliumWeb
+Bar.Text = "Login to Reaper Hub!"
+Bar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bar.TextScaled = true
+Bar.TextSize = 14.000
+Bar.TextWrapped = true
+
+UICorner_26.Parent = Bar
+
+Discord.Name = "Discord"
+Discord.Parent = LoginGUI
+Discord.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Discord.Position = UDim2.new(0.267441869, 0, 0.603030324, 0)
+Discord.Size = UDim2.new(0, 280, 0, 50)
+Discord.Font = Enum.Font.Roboto
+Discord.PlaceholderText = "(Discord code)"
+Discord.Text = ""
+Discord.TextColor3 = Color3.fromRGB(0, 0, 0)
+Discord.TextScaled = true
+Discord.TextSize = 14.000
+Discord.TextWrapped = true
+
+UICorner_27.Parent = Discord
+
+Note.Name = "Note"
+Note.Parent = LoginGUI
+Note.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Note.Position = UDim2.new(0.737541497, 0, 0.884848475, 0)
+Note.Size = UDim2.new(0, 158, 0, 38)
+Note.Font = Enum.Font.SciFi
+Note.Text = "Join the discord server to get the latest codes!"
+Note.TextColor3 = Color3.fromRGB(0, 0, 0)
+Note.TextScaled = true
+Note.TextSize = 14.000
+Note.TextWrapped = true
+
+UICorner_28.Parent = Note
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(107, 107, 107)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = LoginGUI
+
+DiscordInvite_2.Name = "DiscordInvite"
+DiscordInvite_2.Parent = LoginGUI
+DiscordInvite_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+DiscordInvite_2.Position = UDim2.new(0, 0, 0.884848475, 0)
+DiscordInvite_2.Size = UDim2.new(0, 157, 0, 38)
+DiscordInvite_2.Font = Enum.Font.SciFi
+DiscordInvite_2.Text = "Click to copy Discord Invite"
+DiscordInvite_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+DiscordInvite_2.TextScaled = true
+DiscordInvite_2.TextSize = 14.000
+DiscordInvite_2.TextWrapped = true
+
+UICorner_29.Parent = DiscordInvite_2
+
+-- Scripts:
+
+local function TZIA_fake_script() -- Title.TitleScript 
+	local script = Instance.new('Script', Title)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Visible = false
+		wait(2)
+		script.Parent.Visible = true
+	end)
+end
+coroutine.wrap(TZIA_fake_script)()
+local function PLPI_fake_script() -- ScriptHub.DetectGameScript 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "13822889" -- Lumber Tycoon 2
+		if game.PlaceId == tonumber(GameID) then
+			getgenv().bark_key='bark executor soon'
+			loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "286090429" -- Arsenal
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/NougatBitz/DuckHub/master/Main.lua'))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "855499080" -- SkyWars
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/Loadstring9VHD6Wmyi82n", true))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "60684962" -- JailBreak
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak"))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "2788229376" -- DaHood
+		if game.PlaceId == tonumber(GameID) then
+			repeat
+				wait()
+			until game:IsLoaded()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/0nly6Ex/krypt/main/loader"))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "537413528" -- Build A Boat
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/FunnyTimeOkGood/OpPFScript/main/ScriptPF"))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "292439477" -- Phantom Forces
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "301549746" -- Counter Blox
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "1962086868" -- Tower Of Hell
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/iiProductionz/Floater-Scripts/main/WaifuEdition/Tower%20Of%20Hell"))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "920587237" -- Adopt Me
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet("https://pastebin.com/raw/Z3iAXASr", true))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "" -- BloxBurg
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+			
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(PLPI_fake_script)()
+local function AMRJIG_fake_script() -- DiscordInvite.DiscordInviteScript 
+	local script = Instance.new('Script', DiscordInvite)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard('https://discord.gg/HJabVmd')
+	end)
+end
+coroutine.wrap(AMRJIG_fake_script)()
+local function XNLLQ_fake_script() -- ScriptHub.Draggable 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(XNLLQ_fake_script)()
+local function FTCZQD_fake_script() -- ScriptHub.ToggleGUIScript 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	local isVisible = true
+	local Player = game.Players.LocalPlayer:GetMouse()
+	
+	Player.KeyDown:Connect(function(key)
+		if key:byte() == 112 then
+			if isVisible == true then
+				script.Parent.Visible = false
+				isVisible = false
+			elseif isVisible == false then
+				script.Parent.Visible = true
+				isVisible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(FTCZQD_fake_script)()
+local function CHAO_fake_script() -- LoginGUI.Draggable 
+	local script = Instance.new('LocalScript', LoginGUI)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(CHAO_fake_script)()
+local function KGUVLJX_fake_script() -- LoginGUI.LoginScript 
+	local script = Instance.new('LocalScript', LoginGUI)
+
+	script.Parent.Login.MouseButton1Click:Connect(function()
+		if script.Parent.Username.Text == "Reaper" and script.Parent.Password.Text == "Monako145" and script.Parent.Discord.Text == "" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "FlumpyDumpis" and script.Parent.Password.Text == "Wat3rMel0n" and script.Parent.Discord.Text == "6h107wn" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "J1Kur" and script.Parent.Password.Text == "Shadow2021" and script.Parent.Discord.Text == "" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "Chummy" and script.Parent.Password.Text == "Chummy8606" and script.Parent.Discord.Text == "" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "Messi" and script.Parent.Password.Text == "2014" and script.Parent.Discord.Text == "8d982kw" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "Fash" and script.Parent.Password.Text == "Fashion1010" and script.Parent.Discord.Text == "3j628bn" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "DiscordPoo" and script.Parent.Password.Text == "Roblox2323" and script.Parent.Discord.Text == "" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "Bio" and script.Parent.Password.Text == "Baseball" and script.Parent.Discord.Text == "" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "blaze_vvv" and script.Parent.Password.Text == "blazehackingyourmom" and script.Parent.Discord.Text == "3n392lt" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		elseif script.Parent.Username.Text == "Iamtoopogidoti" and script.Parent.Password.Text == "q9q+$D3KfwxbbfuuT&j!" and script.Parent.Discord.Text == "5l1927v" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+		else
+			script.Parent.Username.Text = "Hmmm... seems something is wrong with this login."
+		end
+	end)
+end
+coroutine.wrap(KGUVLJX_fake_script)()
+local function IBVT_fake_script() -- LoginGUI.DiscordInviteScript 
+	local script = Instance.new('LocalScript', LoginGUI)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.DiscordInvite.MouseButton1Click:Connect(function()
+		setclipboard('https://discord.gg/HJabVmd')
+	end)
+end
+coroutine.wrap(IBVT_fake_script)()
