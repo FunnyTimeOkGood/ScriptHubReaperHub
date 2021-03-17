@@ -455,7 +455,7 @@ Bar.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 Bar.Position = UDim2.new(-0.00166112953, 0, 0, 0)
 Bar.Size = UDim2.new(0, 602, 0, 39)
 Bar.Font = Enum.Font.TitilliumWeb
-Bar.Text = "Login to Reaper Hub!"
+Bar.Text = "Login to Reaper Auto Detect!"
 Bar.TextColor3 = Color3.fromRGB(0, 0, 0)
 Bar.TextScaled = true
 Bar.TextSize = 14.000
@@ -511,7 +511,7 @@ UICorner_29.Parent = DiscordInvite_2
 
 -- Scripts:
 
-local function XNYHA_fake_script() -- Title.TitleScript 
+local function BDFXK_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -520,8 +520,8 @@ local function XNYHA_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(XNYHA_fake_script)()
-local function COJO_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(BDFXK_fake_script)()
+local function GJXHXTR_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -627,49 +627,30 @@ local function COJO_fake_script() -- ScriptHub.DetectGameScript
 		end
 	end)
 end
-coroutine.wrap(COJO_fake_script)()
-local function OWDRRI_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(GJXHXTR_fake_script)()
+local function JNBPHDQ_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(OWDRRI_fake_script)()
-local function LCVKCB_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(JNBPHDQ_fake_script)()
+local function QCQEFQI_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(LCVKCB_fake_script)()
-local function XPKS_fake_script() -- ScriptHub.ToggleGUIScript 
-	local script = Instance.new('LocalScript', ScriptHub)
-
-	local isVisible = true
-	local Player = game.Players.LocalPlayer:GetMouse()
-	
-	Player.KeyDown:Connect(function(key)
-		if key:byte() == 112 then
-			if isVisible == true then
-				script.Parent.Visible = false
-				isVisible = false
-			elseif isVisible == false then
-				script.Parent.Visible = true
-				isVisible = true
-			end
-		end
-	end)
-end
-coroutine.wrap(XPKS_fake_script)()
-local function OBXMXBZ_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(QCQEFQI_fake_script)()
+local function JXGUYB_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(OBXMXBZ_fake_script)()
-local function VZKTL_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(JXGUYB_fake_script)()
+local function UKUPCIW_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
@@ -708,8 +689,8 @@ local function VZKTL_fake_script() -- LoginGUI.LoginScript
 		end
 	end)
 end
-coroutine.wrap(VZKTL_fake_script)()
-local function ZGOB_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(UKUPCIW_fake_script)()
+local function VUUDC_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -717,11 +698,11 @@ local function ZGOB_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(ZGOB_fake_script)()
-local function TXPHKS_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(VUUDC_fake_script)()
+local function ZNEIY_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(TXPHKS_fake_script)()
+coroutine.wrap(ZNEIY_fake_script)()
