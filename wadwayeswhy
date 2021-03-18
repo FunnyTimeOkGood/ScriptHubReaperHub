@@ -511,7 +511,7 @@ UICorner_29.Parent = DiscordInvite_2
 
 -- Scripts:
 
-local function JUVPHA_fake_script() -- Title.TitleScript 
+local function XHZAII_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -520,8 +520,8 @@ local function JUVPHA_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(JUVPHA_fake_script)()
-local function BSJGK_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(XHZAII_fake_script)()
+local function WPPVC_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -627,73 +627,103 @@ local function BSJGK_fake_script() -- ScriptHub.DetectGameScript
 		end
 	end)
 end
-coroutine.wrap(BSJGK_fake_script)()
-local function TJCHUKZ_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(WPPVC_fake_script)()
+local function JLPO_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(TJCHUKZ_fake_script)()
-local function XCHW_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(JLPO_fake_script)()
+local function VYGUTTX_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(XCHW_fake_script)()
-local function EMLBEE_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(VYGUTTX_fake_script)()
+local function DOZCN_fake_script() -- ScriptHub.ToggleScript 
+	local script = Instance.new('LocalScript', ScriptHub)
+
+	local isVisible = true
+	local Player = game.Players.LocalPlayer:GetMouse()
+	
+	Player.KeyDown:Connect(function(key)
+		if key:byte() == 112 then
+			if isVisible == true and script.Parent.LoggedIn.Value == true then
+				script.Parent.Visible = false
+				isVisible = false
+			elseif isVisible == false and script.Parent.LoggedIn.Value == true then
+				script.Parent.Visible = true
+				isVisible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(DOZCN_fake_script)()
+local function ZOJM_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(EMLBEE_fake_script)()
-local function XLLKQZB_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(ZOJM_fake_script)()
+local function YUDDGXM_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
 		if script.Parent.Username.Text == "Reaper" and script.Parent.Password.Text == "Monako145" and script.Parent.Discord.Text == "" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "FlumpyDumpis" and script.Parent.Password.Text == "Wat3rMel0n" and script.Parent.Discord.Text == "6h107wn" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "J1Kur" and script.Parent.Password.Text == "Shadow2021" and script.Parent.Discord.Text == "" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "Chummy" and script.Parent.Password.Text == "Chummy8606" and script.Parent.Discord.Text == "" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "Messi" and script.Parent.Password.Text == "2014" and script.Parent.Discord.Text == "8d982kw" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "Fash" and script.Parent.Password.Text == "Fashion1010" and script.Parent.Discord.Text == "3j628bn" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "DiscordPoo" and script.Parent.Password.Text == "Roblox2323" and script.Parent.Discord.Text == "" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "Bio" and script.Parent.Password.Text == "Baseball" and script.Parent.Discord.Text == "" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "blaze_vvv" and script.Parent.Password.Text == "blazehackingyourmom" and script.Parent.Discord.Text == "3n392lt" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "Iamtoopogidoti" and script.Parent.Password.Text == "q9q+$D3KfwxbbfuuT&j!" and script.Parent.Discord.Text == "5l1927v" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Username.Text == "zmining" and script.Parent.Password.Text == "lol1371" and script.Parent.Discord.Text == "5l1927v" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		else
 			script.Parent.Username.Text = "Hmmm... seems something is wrong with this login."
 		end
 	end)
 end
-coroutine.wrap(XLLKQZB_fake_script)()
-local function PWUJW_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(YUDDGXM_fake_script)()
+local function KOAG_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -701,11 +731,11 @@ local function PWUJW_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(PWUJW_fake_script)()
-local function ASDYXFJ_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(KOAG_fake_script)()
+local function ZZRHEA_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(ASDYXFJ_fake_script)()
+coroutine.wrap(ZZRHEA_fake_script)()
