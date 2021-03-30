@@ -511,7 +511,7 @@ UICorner_29.Parent = DiscordInvite_2
 
 -- Scripts:
 
-local function XHZAII_fake_script() -- Title.TitleScript 
+local function XCNCK_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -520,8 +520,8 @@ local function XHZAII_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(XHZAII_fake_script)()
-local function WPPVC_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(XCNCK_fake_script)()
+local function ERQJGFJ_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -627,23 +627,23 @@ local function WPPVC_fake_script() -- ScriptHub.DetectGameScript
 		end
 	end)
 end
-coroutine.wrap(WPPVC_fake_script)()
-local function JLPO_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(ERQJGFJ_fake_script)()
+local function YOPRIUV_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(JLPO_fake_script)()
-local function VYGUTTX_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(YOPRIUV_fake_script)()
+local function KRPZ_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(VYGUTTX_fake_script)()
-local function DOZCN_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(KRPZ_fake_script)()
+local function TOJAL_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -661,15 +661,15 @@ local function DOZCN_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(DOZCN_fake_script)()
-local function ZOJM_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(TOJAL_fake_script)()
+local function VXKHY_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(ZOJM_fake_script)()
-local function YUDDGXM_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(VXKHY_fake_script)()
+local function ATVUT_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
@@ -717,13 +717,17 @@ local function YUDDGXM_fake_script() -- LoginGUI.LoginScript
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
 			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
+		elseif script.Parent.Username.Text == "DaddyAllah" and script.Parent.Password.Text == "fuckmefuck" and script.Parent.Discord.Text == "8105n2kw" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		else
 			script.Parent.Username.Text = "Hmmm... seems something is wrong with this login."
 		end
 	end)
 end
-coroutine.wrap(YUDDGXM_fake_script)()
-local function KOAG_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(ATVUT_fake_script)()
+local function GRCH_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -731,11 +735,11 @@ local function KOAG_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(KOAG_fake_script)()
-local function ZZRHEA_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(GRCH_fake_script)()
+local function EPDCN_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(ZZRHEA_fake_script)()
+coroutine.wrap(EPDCN_fake_script)()
