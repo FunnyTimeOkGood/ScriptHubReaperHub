@@ -511,7 +511,7 @@ UICorner_29.Parent = DiscordInvite_2
 
 -- Scripts:
 
-local function XRMOIX_fake_script() -- Title.TitleScript 
+local function ULJR_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -520,14 +520,14 @@ local function XRMOIX_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(XRMOIX_fake_script)()
-local function HEHCF_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(ULJR_fake_script)()
+local function ZPRGM_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "13822889" -- Lumber Tycoon 2
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('bark executor released :)')
+			loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('when was the last time we changed this?')
 			
 			script.Parent.Visible = false
 		end
@@ -626,23 +626,23 @@ local function HEHCF_fake_script() -- ScriptHub.DetectGameScript
 		end
 	end)
 end
-coroutine.wrap(HEHCF_fake_script)()
-local function RUBDWQY_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(ZPRGM_fake_script)()
+local function MSIOB_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(RUBDWQY_fake_script)()
-local function GNYQWM_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(MSIOB_fake_script)()
+local function KWDSX_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(GNYQWM_fake_script)()
-local function DYQNUQ_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(KWDSX_fake_script)()
+local function RBSUZ_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -660,15 +660,15 @@ local function DYQNUQ_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(DYQNUQ_fake_script)()
-local function AYUNYC_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(RBSUZ_fake_script)()
+local function CFQOSNJ_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(AYUNYC_fake_script)()
-local function SPWAWDK_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(CFQOSNJ_fake_script)()
+local function OSGB_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
@@ -721,8 +721,8 @@ local function SPWAWDK_fake_script() -- LoginGUI.LoginScript
 		end
 	end)
 end
-coroutine.wrap(SPWAWDK_fake_script)()
-local function WIGTV_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(OSGB_fake_script)()
+local function FERQDU_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -730,11 +730,11 @@ local function WIGTV_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(WIGTV_fake_script)()
-local function HGBF_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(FERQDU_fake_script)()
+local function KLGEI_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(HGBF_fake_script)()
+coroutine.wrap(KLGEI_fake_script)()
