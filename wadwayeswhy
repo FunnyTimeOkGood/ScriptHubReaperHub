@@ -511,7 +511,7 @@ UICorner_29.Parent = DiscordInvite_2
 
 -- Scripts:
 
-local function ULJR_fake_script() -- Title.TitleScript 
+local function RNFAXD_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -520,8 +520,8 @@ local function ULJR_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(ULJR_fake_script)()
-local function ZPRGM_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(RNFAXD_fake_script)()
+local function MBPNSSZ_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -626,23 +626,23 @@ local function ZPRGM_fake_script() -- ScriptHub.DetectGameScript
 		end
 	end)
 end
-coroutine.wrap(ZPRGM_fake_script)()
-local function MSIOB_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(MBPNSSZ_fake_script)()
+local function CXUHDM_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(MSIOB_fake_script)()
-local function KWDSX_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(CXUHDM_fake_script)()
+local function YGXQA_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(KWDSX_fake_script)()
-local function RBSUZ_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(YGXQA_fake_script)()
+local function YAQA_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -660,15 +660,15 @@ local function RBSUZ_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(RBSUZ_fake_script)()
-local function CFQOSNJ_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(YAQA_fake_script)()
+local function ZBXXC_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(CFQOSNJ_fake_script)()
-local function OSGB_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(ZBXXC_fake_script)()
+local function BZLM_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
@@ -684,7 +684,7 @@ local function OSGB_fake_script() -- LoginGUI.LoginScript
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
 			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "Chummy" and script.Parent.Password.Text == "Chummy8606" and script.Parent.Discord.Text == "" then
+		elseif script.Parent.Username.Text == "Chummy91" and script.Parent.Password.Text == "BadmanChum" and script.Parent.Discord.Text == "" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
 			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
@@ -721,8 +721,8 @@ local function OSGB_fake_script() -- LoginGUI.LoginScript
 		end
 	end)
 end
-coroutine.wrap(OSGB_fake_script)()
-local function FERQDU_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(BZLM_fake_script)()
+local function VNQFA_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -730,11 +730,11 @@ local function FERQDU_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(FERQDU_fake_script)()
-local function KLGEI_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(VNQFA_fake_script)()
+local function HWIN_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(KLGEI_fake_script)()
+coroutine.wrap(HWIN_fake_script)()
