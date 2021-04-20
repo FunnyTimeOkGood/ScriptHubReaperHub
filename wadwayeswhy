@@ -38,38 +38,40 @@ local BloxBurgSupport = Instance.new("TextLabel")
 local UICorner_14 = Instance.new("UICorner")
 local MoreComingSoon = Instance.new("TextLabel")
 local UICorner_15 = Instance.new("UICorner")
-local Bar1 = Instance.new("Frame")
+local ThoseWhoRemainSupport = Instance.new("TextLabel")
 local UICorner_16 = Instance.new("UICorner")
-local Bar2 = Instance.new("Frame")
+local Bar1 = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
-local SupportedGamestext = Instance.new("TextLabel")
+local Bar2 = Instance.new("Frame")
 local UICorner_18 = Instance.new("UICorner")
-local DetectGame = Instance.new("TextButton")
+local SupportedGamestext = Instance.new("TextLabel")
 local UICorner_19 = Instance.new("UICorner")
-local Information = Instance.new("TextLabel")
+local DetectGame = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local DiscordInvite = Instance.new("TextButton")
+local Information = Instance.new("TextLabel")
 local UICorner_21 = Instance.new("UICorner")
+local DiscordInvite = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
 local LoginGUI = Instance.new("ImageLabel")
 local Login = Instance.new("TextButton")
-local UICorner_22 = Instance.new("UICorner")
-local Username = Instance.new("TextBox")
 local UICorner_23 = Instance.new("UICorner")
-local Password = Instance.new("TextBox")
+local Username = Instance.new("TextBox")
 local UICorner_24 = Instance.new("UICorner")
-local PasswordCensor = Instance.new("TextLabel")
+local Password = Instance.new("TextBox")
 local UICorner_25 = Instance.new("UICorner")
-local Bar = Instance.new("TextLabel")
+local PasswordCensor = Instance.new("TextLabel")
 local UICorner_26 = Instance.new("UICorner")
-local Combo = Instance.new("TextBox")
+local Bar = Instance.new("TextLabel")
 local UICorner_27 = Instance.new("UICorner")
-local Note = Instance.new("TextLabel")
+local Combo = Instance.new("TextBox")
 local UICorner_28 = Instance.new("UICorner")
+local Note = Instance.new("TextLabel")
+local UICorner_29 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
 local DiscordInvite_2 = Instance.new("TextButton")
-local UICorner_29 = Instance.new("UICorner")
-local ComboCensor = Instance.new("TextLabel")
 local UICorner_30 = Instance.new("UICorner")
+local ComboCensor = Instance.new("TextLabel")
+local UICorner_31 = Instance.new("UICorner")
 
 --Properties:
 
@@ -123,6 +125,7 @@ SupportedGames.BackgroundTransparency = 1.000
 SupportedGames.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SupportedGames.Position = UDim2.new(0, 0, 0.240624994, 0)
 SupportedGames.Size = UDim2.new(0, 429, 0, 243)
+SupportedGames.CanvasPosition = Vector2.new(0, 247)
 SupportedGames.ScrollBarThickness = 10
 SupportedGames.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
@@ -295,8 +298,8 @@ MoreComingSoon.Name = "MoreComingSoon"
 MoreComingSoon.Parent = SupportedGames
 MoreComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MoreComingSoon.BackgroundTransparency = 0.800
-MoreComingSoon.Position = UDim2.new(0.0540000014, 0, 0.504000008, 0)
-MoreComingSoon.Size = UDim2.new(0, 381, 0, 16)
+MoreComingSoon.Position = UDim2.new(0.0560000017, 0, 0.546000004, 0)
+MoreComingSoon.Size = UDim2.new(0, 384, 0, 16)
 MoreComingSoon.Font = Enum.Font.SourceSansBold
 MoreComingSoon.Text = "More Coming Soon..."
 MoreComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -306,6 +309,21 @@ MoreComingSoon.TextWrapped = true
 
 UICorner_15.Parent = MoreComingSoon
 
+ThoseWhoRemainSupport.Name = "ThoseWhoRemainSupport"
+ThoseWhoRemainSupport.Parent = SupportedGames
+ThoseWhoRemainSupport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThoseWhoRemainSupport.BackgroundTransparency = 0.800
+ThoseWhoRemainSupport.Position = UDim2.new(0.0563310049, 0, 0.50218749, 0)
+ThoseWhoRemainSupport.Size = UDim2.new(0, 384, 0, 16)
+ThoseWhoRemainSupport.Font = Enum.Font.SourceSansBold
+ThoseWhoRemainSupport.Text = "Those Who Remain"
+ThoseWhoRemainSupport.TextColor3 = Color3.fromRGB(0, 0, 0)
+ThoseWhoRemainSupport.TextScaled = true
+ThoseWhoRemainSupport.TextSize = 14.000
+ThoseWhoRemainSupport.TextWrapped = true
+
+UICorner_16.Parent = ThoseWhoRemainSupport
+
 Bar1.Name = "Bar1"
 Bar1.Parent = ScriptHub
 Bar1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -313,7 +331,7 @@ Bar1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Bar1.Position = UDim2.new(0, 0, 0.231250003, 0)
 Bar1.Size = UDim2.new(0, 433, 0, 6)
 
-UICorner_16.Parent = Bar1
+UICorner_17.Parent = Bar1
 
 Bar2.Name = "Bar2"
 Bar2.Parent = ScriptHub
@@ -322,7 +340,7 @@ Bar2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Bar2.Position = UDim2.new(0.761140823, 0, 0.231250003, 0)
 Bar2.Size = UDim2.new(0, 6, 0, 246)
 
-UICorner_17.Parent = Bar2
+UICorner_18.Parent = Bar2
 
 SupportedGamestext.Name = "SupportedGamestext"
 SupportedGamestext.Parent = ScriptHub
@@ -336,7 +354,7 @@ SupportedGamestext.TextColor3 = Color3.fromRGB(0, 0, 0)
 SupportedGamestext.TextSize = 20.000
 SupportedGamestext.TextWrapped = true
 
-UICorner_18.Parent = SupportedGamestext
+UICorner_19.Parent = SupportedGamestext
 
 DetectGame.Name = "DetectGame"
 DetectGame.Parent = ScriptHub
@@ -350,7 +368,7 @@ DetectGame.TextColor3 = Color3.fromRGB(0, 0, 0)
 DetectGame.TextSize = 20.000
 DetectGame.TextWrapped = true
 
-UICorner_19.Parent = DetectGame
+UICorner_20.Parent = DetectGame
 
 Information.Name = "Information"
 Information.Parent = ScriptHub
@@ -365,7 +383,7 @@ Information.TextScaled = true
 Information.TextSize = 14.000
 Information.TextWrapped = true
 
-UICorner_20.Parent = Information
+UICorner_21.Parent = Information
 
 DiscordInvite.Name = "DiscordInvite"
 DiscordInvite.Parent = ScriptHub
@@ -380,7 +398,7 @@ DiscordInvite.TextScaled = true
 DiscordInvite.TextSize = 14.000
 DiscordInvite.TextWrapped = true
 
-UICorner_21.Parent = DiscordInvite
+UICorner_22.Parent = DiscordInvite
 
 LoginGUI.Name = "LoginGUI"
 LoginGUI.Parent = ScreenGui
@@ -406,7 +424,7 @@ Login.TextScaled = true
 Login.TextSize = 14.000
 Login.TextWrapped = true
 
-UICorner_22.Parent = Login
+UICorner_23.Parent = Login
 
 Username.Name = "Username"
 Username.Parent = LoginGUI
@@ -421,7 +439,7 @@ Username.TextScaled = true
 Username.TextSize = 14.000
 Username.TextWrapped = true
 
-UICorner_23.Parent = Username
+UICorner_24.Parent = Username
 
 Password.Name = "Password"
 Password.Parent = LoginGUI
@@ -435,7 +453,7 @@ Password.TextScaled = true
 Password.TextSize = 14.000
 Password.TextWrapped = true
 
-UICorner_24.Parent = Password
+UICorner_25.Parent = Password
 
 PasswordCensor.Name = "PasswordCensor"
 PasswordCensor.Parent = LoginGUI
@@ -449,7 +467,7 @@ PasswordCensor.TextScaled = true
 PasswordCensor.TextSize = 14.000
 PasswordCensor.TextWrapped = true
 
-UICorner_25.Parent = PasswordCensor
+UICorner_26.Parent = PasswordCensor
 
 Bar.Name = "Bar"
 Bar.Parent = LoginGUI
@@ -463,7 +481,7 @@ Bar.TextScaled = true
 Bar.TextSize = 14.000
 Bar.TextWrapped = true
 
-UICorner_26.Parent = Bar
+UICorner_27.Parent = Bar
 
 Combo.Name = "Combo"
 Combo.Parent = LoginGUI
@@ -477,7 +495,7 @@ Combo.TextScaled = true
 Combo.TextSize = 14.000
 Combo.TextWrapped = true
 
-UICorner_27.Parent = Combo
+UICorner_28.Parent = Combo
 
 Note.Name = "Note"
 Note.Parent = LoginGUI
@@ -491,7 +509,7 @@ Note.TextScaled = true
 Note.TextSize = 14.000
 Note.TextWrapped = true
 
-UICorner_28.Parent = Note
+UICorner_29.Parent = Note
 
 UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(107, 107, 107)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_3.Parent = LoginGUI
@@ -508,7 +526,7 @@ DiscordInvite_2.TextScaled = true
 DiscordInvite_2.TextSize = 14.000
 DiscordInvite_2.TextWrapped = true
 
-UICorner_29.Parent = DiscordInvite_2
+UICorner_30.Parent = DiscordInvite_2
 
 ComboCensor.Name = "ComboCensor"
 ComboCensor.Parent = LoginGUI
@@ -522,11 +540,11 @@ ComboCensor.TextScaled = true
 ComboCensor.TextSize = 14.000
 ComboCensor.TextWrapped = true
 
-UICorner_30.Parent = ComboCensor
+UICorner_31.Parent = ComboCensor
 
 -- Scripts:
 
-local function WRSNVI_fake_script() -- Title.TitleScript 
+local function JSWACR_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -535,8 +553,8 @@ local function WRSNVI_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(WRSNVI_fake_script)()
-local function YEUES_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(JSWACR_fake_script)()
+local function OJWJ_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -633,31 +651,42 @@ local function YEUES_fake_script() -- ScriptHub.DetectGameScript
 	end)
 	
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
-		local GameID = "" -- BloxBurg
+		local GameID = "185655149" -- BloxBurg
 		if game.PlaceId == tonumber(GameID) then
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
 			
 			script.Parent.Visible = false
 		end
 	end)
+	
+	script.Parent.DetectGame.MouseButton1Click:Connect(function()
+		local GameID = "488667523" -- ThoseWhoRemain
+		if game.PlaceId == tonumber(GameID) then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/Avverias/joehack/main/those%20who%20remain.lua")) ()
+			
+			print("Do not use infinite ammo!")
+	
+			script.Parent.Visible = false
+		end
+	end)
 end
-coroutine.wrap(YEUES_fake_script)()
-local function VQKSJ_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(OJWJ_fake_script)()
+local function NWQEZAL_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(VQKSJ_fake_script)()
-local function YKGCG_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(NWQEZAL_fake_script)()
+local function MPYMT_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(YKGCG_fake_script)()
-local function UMCFSLO_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(MPYMT_fake_script)()
+local function CBNE_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -675,15 +704,15 @@ local function UMCFSLO_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(UMCFSLO_fake_script)()
-local function AQNF_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(CBNE_fake_script)()
+local function ERPYQZ_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(AQNF_fake_script)()
-local function WYTU_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(ERPYQZ_fake_script)()
+local function CNZXW_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
@@ -731,6 +760,10 @@ local function WYTU_fake_script() -- LoginGUI.LoginScript
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
 			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
+		elseif script.Parent.Username.Text == "Hudson" and script.Parent.Password.Text == "RobloxCheats" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		elseif script.Parent.Combo.Text == "Reaper:Monako145" then
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
@@ -775,13 +808,17 @@ local function WYTU_fake_script() -- LoginGUI.LoginScript
 			script.Parent.Parent.ScriptHub.Visible = true
 			script.Parent.Parent.LoginGUI.Visible = false
 			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
+		elseif script.Parent.Combo.Text == "Hudson:RobloxCheats" then
+			script.Parent.Parent.ScriptHub.Visible = true
+			script.Parent.Parent.LoginGUI.Visible = false
+			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
 		else
 			script.Parent.Username.Text = "Hmmm... seems something is wrong with this login."
 		end
 	end)
 end
-coroutine.wrap(WYTU_fake_script)()
-local function IJDZL_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(CNZXW_fake_script)()
+local function UUCFUT_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -789,11 +826,11 @@ local function IJDZL_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(IJDZL_fake_script)()
-local function NLYOBT_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(UUCFUT_fake_script)()
+local function KLFRVPC_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(NLYOBT_fake_script)()
+coroutine.wrap(KLFRVPC_fake_script)()
