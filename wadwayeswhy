@@ -125,7 +125,6 @@ SupportedGames.BackgroundTransparency = 1.000
 SupportedGames.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SupportedGames.Position = UDim2.new(0, 0, 0.240624994, 0)
 SupportedGames.Size = UDim2.new(0, 429, 0, 243)
-SupportedGames.CanvasPosition = Vector2.new(0, 247)
 SupportedGames.ScrollBarThickness = 10
 SupportedGames.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
@@ -544,7 +543,7 @@ UICorner_31.Parent = ComboCensor
 
 -- Scripts:
 
-local function JSWACR_fake_script() -- Title.TitleScript 
+local function JJMOIP_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -553,8 +552,8 @@ local function JSWACR_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(JSWACR_fake_script)()
-local function OJWJ_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(JJMOIP_fake_script)()
+local function MWOHON_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -664,29 +663,29 @@ local function OJWJ_fake_script() -- ScriptHub.DetectGameScript
 		if game.PlaceId == tonumber(GameID) then
 			loadstring(game:HttpGet("https://raw.githubusercontent.com/Avverias/joehack/main/those%20who%20remain.lua")) ()
 			
-			print("Do not use infinite ammo!")
-	
 			script.Parent.Visible = false
+			
+			print("Do not use infinite ammo!")
 		end
 	end)
 end
-coroutine.wrap(OJWJ_fake_script)()
-local function NWQEZAL_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(MWOHON_fake_script)()
+local function XRXH_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(NWQEZAL_fake_script)()
-local function MPYMT_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(XRXH_fake_script)()
+local function YDWTYQ_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(MPYMT_fake_script)()
-local function CBNE_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(YDWTYQ_fake_script)()
+local function WGBMNT_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -704,15 +703,15 @@ local function CBNE_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(CBNE_fake_script)()
-local function ERPYQZ_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(WGBMNT_fake_script)()
+local function RYCBHM_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(ERPYQZ_fake_script)()
-local function CNZXW_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(RYCBHM_fake_script)()
+local function YDILFOG_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
@@ -817,8 +816,8 @@ local function CNZXW_fake_script() -- LoginGUI.LoginScript
 		end
 	end)
 end
-coroutine.wrap(CNZXW_fake_script)()
-local function UUCFUT_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(YDILFOG_fake_script)()
+local function VWLSR_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -826,11 +825,11 @@ local function UUCFUT_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(UUCFUT_fake_script)()
-local function KLFRVPC_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(VWLSR_fake_script)()
+local function EKJQTYV_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(KLFRVPC_fake_script)()
+coroutine.wrap(EKJQTYV_fake_script)()
