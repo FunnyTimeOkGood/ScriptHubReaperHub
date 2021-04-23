@@ -543,7 +543,7 @@ UICorner_31.Parent = ComboCensor
 
 -- Scripts:
 
-local function ZXFSBYI_fake_script() -- Title.TitleScript 
+local function KPDU_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -552,8 +552,8 @@ local function ZXFSBYI_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(ZXFSBYI_fake_script)()
-local function SUPQBY_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(KPDU_fake_script)()
+local function CFZS_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -586,7 +586,7 @@ local function SUPQBY_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "60684962" -- JailBreak
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
 			
 			script.Parent.Visible = false
 		end
@@ -616,7 +616,7 @@ local function SUPQBY_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "292439477" -- Phantom Forces
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
 			
 			script.Parent.Visible = false
 		end
@@ -625,7 +625,7 @@ local function SUPQBY_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "301549746" -- Counter Blox
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
 			
 			script.Parent.Visible = false
 		end
@@ -652,7 +652,7 @@ local function SUPQBY_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "185655149" -- BloxBurg
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
 			
 			script.Parent.Visible = false
 		end
@@ -669,23 +669,23 @@ local function SUPQBY_fake_script() -- ScriptHub.DetectGameScript
 		end
 	end)
 end
-coroutine.wrap(SUPQBY_fake_script)()
-local function GMTTGZF_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(CFZS_fake_script)()
+local function OPDJVAE_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(GMTTGZF_fake_script)()
-local function CHGX_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(OPDJVAE_fake_script)()
+local function VVAK_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(CHGX_fake_script)()
-local function TZDJ_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(VVAK_fake_script)()
+local function WREX_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -703,15 +703,15 @@ local function TZDJ_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(TZDJ_fake_script)()
-local function FOXY_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(WREX_fake_script)()
+local function THGGXZM_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(FOXY_fake_script)()
-local function OMIT_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(THGGXZM_fake_script)()
+local function TROL_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
@@ -824,8 +824,8 @@ local function OMIT_fake_script() -- LoginGUI.LoginScript
 		end
 	end)
 end
-coroutine.wrap(OMIT_fake_script)()
-local function DJIE_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(TROL_fake_script)()
+local function AAQTXV_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -833,11 +833,11 @@ local function DJIE_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(DJIE_fake_script)()
-local function IWJOM_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(AAQTXV_fake_script)()
+local function GFPPLX_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(IWJOM_fake_script)()
+coroutine.wrap(GFPPLX_fake_script)()
