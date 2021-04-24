@@ -543,7 +543,7 @@ UICorner_31.Parent = ComboCensor
 
 -- Scripts:
 
-local function KPDU_fake_script() -- Title.TitleScript 
+local function NHLY_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -552,8 +552,8 @@ local function KPDU_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(KPDU_fake_script)()
-local function CFZS_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(NHLY_fake_script)()
+local function NUTNMFP_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -669,23 +669,23 @@ local function CFZS_fake_script() -- ScriptHub.DetectGameScript
 		end
 	end)
 end
-coroutine.wrap(CFZS_fake_script)()
-local function OPDJVAE_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(NUTNMFP_fake_script)()
+local function BXEZKW_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(OPDJVAE_fake_script)()
-local function VVAK_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(BXEZKW_fake_script)()
+local function DTFNMDI_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(VVAK_fake_script)()
-local function WREX_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(DTFNMDI_fake_script)()
+local function DFIXDX_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -703,15 +703,52 @@ local function WREX_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(WREX_fake_script)()
-local function THGGXZM_fake_script() -- LoginGUI.Draggable 
+coroutine.wrap(DFIXDX_fake_script)()
+local function GAPYXQ_fake_script() -- LoginGUI.Draggable 
 	local script = Instance.new('LocalScript', LoginGUI)
 
-	script.Parent.Active = true
-	script.Parent.Draggable = true
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
 end
-coroutine.wrap(THGGXZM_fake_script)()
-local function TROL_fake_script() -- LoginGUI.LoginScript 
+coroutine.wrap(GAPYXQ_fake_script)()
+local function VUMAZI_fake_script() -- LoginGUI.LoginScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	script.Parent.Login.MouseButton1Click:Connect(function()
@@ -824,8 +861,8 @@ local function TROL_fake_script() -- LoginGUI.LoginScript
 		end
 	end)
 end
-coroutine.wrap(TROL_fake_script)()
-local function AAQTXV_fake_script() -- LoginGUI.DiscordInviteScript 
+coroutine.wrap(VUMAZI_fake_script)()
+local function UJVSKHG_fake_script() -- LoginGUI.DiscordInviteScript 
 	local script = Instance.new('LocalScript', LoginGUI)
 
 	local player = game.Players.LocalPlayer
@@ -833,11 +870,11 @@ local function AAQTXV_fake_script() -- LoginGUI.DiscordInviteScript
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(AAQTXV_fake_script)()
-local function GFPPLX_fake_script() -- ScreenGui.LoginTween 
+coroutine.wrap(UJVSKHG_fake_script)()
+local function ETMOPBE_fake_script() -- ScreenGui.LoginTween 
 	local script = Instance.new('Script', ScreenGui)
 
 	local object = script.Parent.LoginGUI
 	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
 end
-coroutine.wrap(GFPPLX_fake_script)()
+coroutine.wrap(ETMOPBE_fake_script)()
