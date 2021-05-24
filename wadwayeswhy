@@ -54,26 +54,6 @@ local Information = Instance.new("TextLabel")
 local UICorner_22 = Instance.new("UICorner")
 local DiscordInvite = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
-local LoginGUI = Instance.new("ImageLabel")
-local Login = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
-local Username = Instance.new("TextBox")
-local UICorner_25 = Instance.new("UICorner")
-local Password = Instance.new("TextBox")
-local UICorner_26 = Instance.new("UICorner")
-local PasswordCensor = Instance.new("TextLabel")
-local UICorner_27 = Instance.new("UICorner")
-local Bar = Instance.new("TextLabel")
-local UICorner_28 = Instance.new("UICorner")
-local Combo = Instance.new("TextBox")
-local UICorner_29 = Instance.new("UICorner")
-local Note = Instance.new("TextLabel")
-local UICorner_30 = Instance.new("UICorner")
-local UIGradient_3 = Instance.new("UIGradient")
-local DiscordInvite_2 = Instance.new("TextButton")
-local UICorner_31 = Instance.new("UICorner")
-local ComboCensor = Instance.new("TextLabel")
-local UICorner_32 = Instance.new("UICorner")
 
 --Properties:
 
@@ -85,7 +65,6 @@ ScriptHub.Parent = ScreenGui
 ScriptHub.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
 ScriptHub.Position = UDim2.new(0.647613049, 0, 0.618593574, 0)
 ScriptHub.Size = UDim2.new(0, 561, 0, 320)
-ScriptHub.Visible = false
 
 UICorner.Parent = ScriptHub
 
@@ -416,151 +395,9 @@ DiscordInvite.TextWrapped = true
 
 UICorner_23.Parent = DiscordInvite
 
-LoginGUI.Name = "LoginGUI"
-LoginGUI.Parent = ScreenGui
-LoginGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LoginGUI.BackgroundTransparency = 1.000
-LoginGUI.Position = UDim2.new(0.307999998, 0, 0, -330)
-LoginGUI.Size = UDim2.new(0, 602, 0, 320)
-LoginGUI.Image = "rbxassetid://3570695787"
-LoginGUI.ImageColor3 = Color3.fromRGB(65, 65, 65)
-LoginGUI.ScaleType = Enum.ScaleType.Slice
-LoginGUI.SliceCenter = Rect.new(100, 100, 100, 100)
-LoginGUI.SliceScale = 0.120
-
-Login.Name = "Login"
-Login.Parent = LoginGUI
-Login.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-Login.Position = UDim2.new(0.338870436, 0, 0.815151513, 0)
-Login.Size = UDim2.new(0, 201, 0, 43)
-Login.Font = Enum.Font.TitilliumWeb
-Login.Text = "Login"
-Login.TextColor3 = Color3.fromRGB(0, 0, 0)
-Login.TextScaled = true
-Login.TextSize = 14.000
-Login.TextWrapped = true
-
-UICorner_24.Parent = Login
-
-Username.Name = "Username"
-Username.Parent = LoginGUI
-Username.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-Username.Position = UDim2.new(0.225913614, 0, 0.187878788, 0)
-Username.Size = UDim2.new(0, 330, 0, 50)
-Username.Font = Enum.Font.Roboto
-Username.PlaceholderText = "(Username)"
-Username.Text = ""
-Username.TextColor3 = Color3.fromRGB(0, 0, 0)
-Username.TextScaled = true
-Username.TextSize = 14.000
-Username.TextWrapped = true
-
-UICorner_25.Parent = Username
-
-Password.Name = "Password"
-Password.Parent = LoginGUI
-Password.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-Password.Position = UDim2.new(0.224252477, 0, 0.403030276, 0)
-Password.Size = UDim2.new(0, 330, 0, 50)
-Password.Font = Enum.Font.SourceSans
-Password.Text = ""
-Password.TextColor3 = Color3.fromRGB(0, 0, 0)
-Password.TextScaled = true
-Password.TextSize = 14.000
-Password.TextWrapped = true
-
-UICorner_26.Parent = Password
-
-PasswordCensor.Name = "PasswordCensor"
-PasswordCensor.Parent = LoginGUI
-PasswordCensor.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-PasswordCensor.Position = UDim2.new(0.235880405, 0, 0.421212107, 0)
-PasswordCensor.Size = UDim2.new(0, 317, 0, 37)
-PasswordCensor.Font = Enum.Font.TitilliumWeb
-PasswordCensor.Text = "!Password Censor!"
-PasswordCensor.TextColor3 = Color3.fromRGB(0, 0, 0)
-PasswordCensor.TextScaled = true
-PasswordCensor.TextSize = 14.000
-PasswordCensor.TextWrapped = true
-
-UICorner_27.Parent = PasswordCensor
-
-Bar.Name = "Bar"
-Bar.Parent = LoginGUI
-Bar.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-Bar.Position = UDim2.new(-0.00166112953, 0, 0, 0)
-Bar.Size = UDim2.new(0, 602, 0, 39)
-Bar.Font = Enum.Font.TitilliumWeb
-Bar.Text = "Login to Reaper Auto Detect!"
-Bar.TextColor3 = Color3.fromRGB(0, 0, 0)
-Bar.TextScaled = true
-Bar.TextSize = 14.000
-Bar.TextWrapped = true
-
-UICorner_28.Parent = Bar
-
-Combo.Name = "Combo"
-Combo.Parent = LoginGUI
-Combo.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-Combo.Position = UDim2.new(0.267441869, 0, 0.603030324, 0)
-Combo.Size = UDim2.new(0, 280, 0, 50)
-Combo.Font = Enum.Font.Roboto
-Combo.Text = ""
-Combo.TextColor3 = Color3.fromRGB(0, 0, 0)
-Combo.TextScaled = true
-Combo.TextSize = 14.000
-Combo.TextWrapped = true
-
-UICorner_29.Parent = Combo
-
-Note.Name = "Note"
-Note.Parent = LoginGUI
-Note.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-Note.Position = UDim2.new(0.737541497, 0, 0.884848475, 0)
-Note.Size = UDim2.new(0, 158, 0, 38)
-Note.Font = Enum.Font.SciFi
-Note.Text = "Join the discord server to get the latest codes!"
-Note.TextColor3 = Color3.fromRGB(0, 0, 0)
-Note.TextScaled = true
-Note.TextSize = 14.000
-Note.TextWrapped = true
-
-UICorner_30.Parent = Note
-
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.43, Color3.fromRGB(107, 107, 107)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-UIGradient_3.Parent = LoginGUI
-
-DiscordInvite_2.Name = "DiscordInvite"
-DiscordInvite_2.Parent = LoginGUI
-DiscordInvite_2.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-DiscordInvite_2.Position = UDim2.new(0, 0, 0.884848475, 0)
-DiscordInvite_2.Size = UDim2.new(0, 157, 0, 38)
-DiscordInvite_2.Font = Enum.Font.SciFi
-DiscordInvite_2.Text = "Click to copy Discord Invite"
-DiscordInvite_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-DiscordInvite_2.TextScaled = true
-DiscordInvite_2.TextSize = 14.000
-DiscordInvite_2.TextWrapped = true
-
-UICorner_31.Parent = DiscordInvite_2
-
-ComboCensor.Name = "ComboCensor"
-ComboCensor.Parent = LoginGUI
-ComboCensor.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
-ComboCensor.Position = UDim2.new(0.27740863, 0, 0.621212125, 0)
-ComboCensor.Size = UDim2.new(0, 267, 0, 37)
-ComboCensor.Font = Enum.Font.TitilliumWeb
-ComboCensor.Text = "!Combo Censor!"
-ComboCensor.TextColor3 = Color3.fromRGB(0, 0, 0)
-ComboCensor.TextScaled = true
-ComboCensor.TextSize = 14.000
-ComboCensor.TextWrapped = true
-
-UICorner_32.Parent = ComboCensor
-
 -- Scripts:
 
-local function CYBUY_fake_script() -- Title.TitleScript 
+local function BYMUZ_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -569,8 +406,8 @@ local function CYBUY_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(CYBUY_fake_script)()
-local function KXWIEBB_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(BYMUZ_fake_script)()
+local function BYKTD_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -695,23 +532,23 @@ local function KXWIEBB_fake_script() -- ScriptHub.DetectGameScript
 		end
 	end)
 end
-coroutine.wrap(KXWIEBB_fake_script)()
-local function VKMHOMG_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(BYKTD_fake_script)()
+local function LYKHWR_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(VKMHOMG_fake_script)()
-local function ABVIY_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(LYKHWR_fake_script)()
+local function CWTX_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(ABVIY_fake_script)()
-local function KHGT_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(CWTX_fake_script)()
+local function JLIDWMI_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -729,202 +566,14 @@ local function KHGT_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(KHGT_fake_script)()
-local function SDES_fake_script() -- LoginGUI.Draggable 
-	local script = Instance.new('LocalScript', LoginGUI)
+coroutine.wrap(JLIDWMI_fake_script)()
+local function SOOME_fake_script() -- ScreenGui.Verification 
+	local script = Instance.new('LocalScript', ScreenGui)
 
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	local groupid = 9323224
+	if game.Players.LocalPlayer:IsInGroup(groupid) then
+	else
+		game.Players.LocalPlayer:Kick("Not Bought, buy at https://discord.gg/5CFKAXczcZ")
 	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
 end
-coroutine.wrap(SDES_fake_script)()
-local function WNMG_fake_script() -- LoginGUI.LoginScript 
-	local script = Instance.new('LocalScript', LoginGUI)
-
-	script.Parent.Login.MouseButton1Click:Connect(function()
-		if script.Parent.Username.Text == "Reaper" and script.Parent.Password.Text == "Monako145" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "FlumpyDumpis" and script.Parent.Password.Text == "Wat3rMel0n" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "J1Kur" and script.Parent.Password.Text == "Shadow2021" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "Chummy91" and script.Parent.Password.Text == "Chum12345" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "Messi" and script.Parent.Password.Text == "2014" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "Fash" and script.Parent.Password.Text == "Fashion1010" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "DiscordPoo" and script.Parent.Password.Text == "Roblox2323" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "Bio" and script.Parent.Password.Text == "Baseball" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "blaze_vvv" and script.Parent.Password.Text == "blazehackingyourmom" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "Iamtoopogidoti" and script.Parent.Password.Text == "q9q+$D3KfwxbbfuuT&j!" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "zmining" and script.Parent.Password.Text == "lol1371" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "Hudson" and script.Parent.Password.Text == "RobloxCheats" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "Hash" and script.Parent.Password.Text == "hash123" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "borkings" and script.Parent.Password.Text == "420blazeit" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "mr.fd" and script.Parent.Password.Text == "69420" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Username.Text == "OrigamiMaster52" and script.Parent.Password.Text == "Owen253085!" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "Reaper:Monako145" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "FlumpyDumpis:Wat3rMel0n" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "J1Kur:Shadow2021" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "Chummy91:Chum12345" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "Messi:2014" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "Fash:Fashion1010" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "DiscordPoo:Roblox2323" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "Bio:Baseball" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "blaze_vvv:blazehackingyourmom" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "Iamtoopogidoti:q9q+$D3KfwxbbfuuT&j!" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "zmining:lol1371" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "Hudson:RobloxCheats" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "Hash:hash123" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "borkings:420blazeit" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "mr.fd:69420" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		elseif script.Parent.Combo.Text == "OrigamiMaster52:Owen253085!" then
-			script.Parent.Parent.ScriptHub.Visible = true
-			script.Parent.Parent.LoginGUI.Visible = false
-			script.Parent.Parent.ScriptHub.LoggedIn.Value = true
-		else
-			script.Parent.Username.Text = "Hmmm... seems something is wrong with this login."
-		end
-	end)
-end
-coroutine.wrap(WNMG_fake_script)()
-local function NGVGDRE_fake_script() -- LoginGUI.DiscordInviteScript 
-	local script = Instance.new('LocalScript', LoginGUI)
-
-	local player = game.Players.LocalPlayer
-	script.Parent.DiscordInvite.MouseButton1Click:Connect(function()
-		setclipboard('https://discord.gg/HJabVmd')
-	end)
-end
-coroutine.wrap(NGVGDRE_fake_script)()
-local function VWLDJ_fake_script() -- ScreenGui.LoginTween 
-	local script = Instance.new('Script', ScreenGui)
-
-	local object = script.Parent.LoginGUI
-	object:TweenPosition(UDim2.new(0.308,0,0.25,0),"Out","Bounce",1.5)
-end
-coroutine.wrap(VWLDJ_fake_script)()
+coroutine.wrap(SOOME_fake_script)()
