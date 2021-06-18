@@ -2,8 +2,7 @@
 -- Version: 3.2
 
 -- Instances:
-if getgenv().GUI_RUNNING then return end
-getgenv().GUI_RUNNING = true
+
 local ScreenGui = Instance.new("ScreenGui")
 local ScriptHub = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -397,7 +396,7 @@ UICorner_23.Parent = DiscordInvite
 
 -- Scripts:
 
-local function BYMUZ_fake_script() -- Title.TitleScript 
+local function NCGWH_fake_script() -- Title.TitleScript 
 	local script = Instance.new('Script', Title)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -406,8 +405,8 @@ local function BYMUZ_fake_script() -- Title.TitleScript
 		script.Parent.Visible = true
 	end)
 end
-coroutine.wrap(BYMUZ_fake_script)()
-local function BYKTD_fake_script() -- ScriptHub.DetectGameScript 
+coroutine.wrap(NCGWH_fake_script)()
+local function JHUNAO_fake_script() -- ScriptHub.DetectGameScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
@@ -440,7 +439,7 @@ local function BYKTD_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "60684962" -- JailBreak
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init%27'), true))()
 			
 			script.Parent.Visible = false
 		end
@@ -470,7 +469,7 @@ local function BYKTD_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "292439477" -- Phantom Forces
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init%27'), true))()
 			
 			script.Parent.Visible = false
 		end
@@ -479,7 +478,7 @@ local function BYKTD_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "301549746" -- Counter Blox
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init%27'), true))()
 			
 			script.Parent.Visible = false
 		end
@@ -506,7 +505,7 @@ local function BYKTD_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "185655149" -- BloxBurg
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init%27'), true))()
 			
 			script.Parent.Visible = false
 		end
@@ -526,29 +525,29 @@ local function BYKTD_fake_script() -- ScriptHub.DetectGameScript
 	script.Parent.DetectGame.MouseButton1Click:Connect(function()
 		local GameID = "2041312716" -- Ragdoll Engine
 		if game.PlaceId == tonumber(GameID) then
-			loadstring(game:HttpGet(("https://darkhub.xyz/remote-script.lua"), true))()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init%27'), true))()
 	
 			script.Parent.Visible = false
 		end
 	end)
 end
-coroutine.wrap(BYKTD_fake_script)()
-local function LYKHWR_fake_script() -- DiscordInvite.DiscordInviteScript 
+coroutine.wrap(JHUNAO_fake_script)()
+local function KJJO_fake_script() -- DiscordInvite.DiscordInviteScript 
 	local script = Instance.new('Script', DiscordInvite)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard('https://discord.gg/HJabVmd')
 	end)
 end
-coroutine.wrap(LYKHWR_fake_script)()
-local function CWTX_fake_script() -- ScriptHub.Draggable 
+coroutine.wrap(KJJO_fake_script)()
+local function TNTY_fake_script() -- ScriptHub.Draggable 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(CWTX_fake_script)()
-local function JLIDWMI_fake_script() -- ScriptHub.ToggleScript 
+coroutine.wrap(TNTY_fake_script)()
+local function FSYUE_fake_script() -- ScriptHub.ToggleScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local isVisible = true
@@ -566,8 +565,8 @@ local function JLIDWMI_fake_script() -- ScriptHub.ToggleScript
 		end
 	end)
 end
-coroutine.wrap(JLIDWMI_fake_script)()
-local function SOOME_fake_script() -- ScreenGui.Verification 
+coroutine.wrap(FSYUE_fake_script)()
+local function JZYU_fake_script() -- ScreenGui.Verification 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local groupid = 9323224
@@ -576,4 +575,4 @@ local function SOOME_fake_script() -- ScreenGui.Verification
 		game.Players.LocalPlayer:Kick("Not Bought, buy at https://discord.gg/5CFKAXczcZ")
 	end
 end
-coroutine.wrap(SOOME_fake_script)()
+coroutine.wrap(JZYU_fake_script)()
